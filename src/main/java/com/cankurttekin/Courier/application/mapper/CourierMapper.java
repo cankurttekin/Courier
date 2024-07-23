@@ -2,7 +2,9 @@ package com.cankurttekin.Courier.application.mapper;
 
 import com.cankurttekin.Courier.application.dto.CourierDTO;
 import com.cankurttekin.Courier.domain.entity.Courier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CourierMapper {
     public CourierDTO toDTO(Courier courier) {
         CourierDTO courierDTO = new CourierDTO();

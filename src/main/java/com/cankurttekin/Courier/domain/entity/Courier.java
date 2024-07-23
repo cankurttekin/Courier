@@ -1,15 +1,10 @@
 package com.cankurttekin.Courier.domain.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
-@Data
 @Getter
 @Setter
 @Table(name = "couriers")
@@ -22,5 +17,5 @@ public class Courier {
     private String name;
     private String lastname;
     private String phoneNumber;
-
+    private DeliveryStatus status;
 }

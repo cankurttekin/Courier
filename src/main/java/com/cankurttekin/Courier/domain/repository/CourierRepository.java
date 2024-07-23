@@ -6,6 +6,6 @@ import java.util.Optional;
 
 public interface CourierRepository {
     Optional<Courier> findById(Long id);
-    Optional<Courier> findByTrackingNumber(String trackingNumber);
+    //Optional<Courier> findByTrackingNumber(String trackingNumber);
     Courier save(Courier courier);
 }
