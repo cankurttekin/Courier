@@ -1,5 +1,6 @@
 package com.cankurttekin.Courier.presentation.rest;
 
+import com.cankurttekin.Courier.application.constant.Path;
 import com.cankurttekin.Courier.application.dto.CourierDTO;
 import com.cankurttekin.Courier.application.mapper.CourierMapper;
 import com.cankurttekin.Courier.application.mapper.CourierMapperImpl;
@@ -12,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/couriers")
+@RequestMapping(Path.BASE_PATH_COURIER)
 public class CourierController {
 
     @Autowired private CourierService courierService;

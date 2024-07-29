@@ -6,17 +6,18 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Table(name = "courier_locator")
+@Table(name = "store")
 @Entity
-public class CourierLocator {
+public class Store {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "courier_id")
-    private Courier courier;
+    private String name;
+
     private double latitude;
-    private double longitude;
+
+    private double longtitude;
+
 }

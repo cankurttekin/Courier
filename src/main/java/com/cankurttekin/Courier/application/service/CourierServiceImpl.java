@@ -41,7 +41,7 @@ public class CourierServiceImpl implements CourierService {
     public void updateCourier(Long id, DeliveryStatus status) {
         // implement
         Courier courier = getCourierById(id);
-        courier.setStatus(status);
+        //courier.setStatus(status);
         courierRepository.save(courier);
     }
 }

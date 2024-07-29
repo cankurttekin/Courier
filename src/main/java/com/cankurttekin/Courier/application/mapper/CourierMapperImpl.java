@@ -16,6 +16,7 @@ public class CourierMapperImpl implements CourierMapper {
         courierDTO.setId((courier.getId()));
         courierDTO.setName(courier.getName());
         courierDTO.setLastname(courier.getLastname());
+        courierDTO.setPhoneNumber(courier.getPhoneNumber());
         courierDTO.setStatus(courier.getStatus());
 
         return  courierDTO;
@@ -27,6 +28,7 @@ public class CourierMapperImpl implements CourierMapper {
         courier.setId(courierDTO.getId());
         courier.setName(courierDTO.getName());
         courier.setLastname(courierDTO.getLastname());
+        courier.setPhoneNumber(courierDTO.getPhoneNumber());
         courier.setStatus(courierDTO.getStatus());
 
         return courier;

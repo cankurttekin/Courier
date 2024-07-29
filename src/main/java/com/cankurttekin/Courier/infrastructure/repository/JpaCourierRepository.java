@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface JpaCourierRepository extends JpaRepository<Courier, Long>, CourierRepository {
-    // Optional<Courier> findByTracking ?? implement
+    Optional<Courier> findById(Long id);
 }
